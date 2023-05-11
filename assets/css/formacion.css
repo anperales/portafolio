@@ -5,7 +5,6 @@
     background-color: var(--color-seccion);
     padding-top: 3rem;
     padding-bottom: 3rem;
-   
 }
 
 .academic__title{
@@ -17,24 +16,32 @@
 
 .academic__courses{
     display: flex;
-
     gap: 1rem;
 }
 
+.academic__courses__list{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 220px;
+    height: 190px;
+    border: 1px white solid;
+}
 .academic__courses__item__img{
-    width: 368px;
-    height: 286px;
+    width: 100px;
+    height: 30px;
     padding: 1rem;
     background-color: var(--color-cajas);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 80%;
-    
 }
 
 .academic__courses__item__img--univa{
     background-image: url("../img/UNIVA_logo.png");
-
+    
 }
 
 .academic__courses__item__img--iteso{
@@ -76,16 +83,16 @@
         max-width: 224px;
     }
 
-    .academic__courses__item__img{
+    /* .academic__courses__item__img{
         width: 224px;
         height: 118px;
         background-size:50%;
         padding: 0;
-    }
+    } */
 
     .academic__courses__item__title{
         font-size: 1rem;
-      
+    
     }
     
     .academic__courses__item__subtitle{
@@ -95,10 +102,9 @@
     }    
 }
 
-@media  screen and (max-width:380px) {
+@media  screen and (max-width:800px) {
 
     .academic__courses{
-       flex-direction: column;
-              
+        flex-direction: column;
     }
 }

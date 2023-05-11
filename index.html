@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/cabecera.css">
+    <link rel="stylesheet" href="./assets/css/menu.css">
     <link rel="stylesheet" href="./assets/css/titulo.css">
     <link rel="stylesheet" href="./assets/css/sobre.css">
     <link rel="stylesheet" href="./assets/css/habilidades.css">
     <link rel="stylesheet" href="./assets/css/pasatiempos.css">
     <link rel="stylesheet" href="./assets/css/formacion.css">
-    <link rel="stylesheet" href="./assets/css/experiencia.css">
+    <link rel="stylesheet" href="./assets/css/experiencia.css"> 
     <link rel="stylesheet" href="./assets/css/contacto.css">
     <link rel="stylesheet" href="./assets/css/rodapie.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,26 +23,31 @@
     <!-- Fuente del Proyecto Raleway -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <title> Portafolio de Anabell Perales Torres</title>
+    <script>
+        function desplegar() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
 </head>
 <body>
     <!-- Sección del Menú  -->
     <div class="tudo">
-    <section class="menu">
-        <header class="menu__header">
-            <img src="./assets/img/vector.png">
-            <h3 class="menu__title">Anabell Perales Torres</h3>
-        </header>
-        <nav>
-            <ul class="menu__list">
-                <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
-                <li class="menu__list__item"><a href="#skills">Skills</a></li>
-                <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
-                <li class="menu__list__item"><a href="#formacion">Formación</a></li>
-                <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
-                <li class="menu__list__item"><a href="#contacto">anabell@consultoriaaker.com</a></li>
-            </ul>
-        </nav>
-    </section>
+    <div class="topnav" id="myTopnav">
+        <a href="#contacto" class="active menu__header"><img src="./assets/img/vector.png"><span><h3 class="menu__title">Anabell Perales T.</h3></span></a>
+        <a href="#sobre-mi">Sobre mi</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#hobbies">Pasatiempos</a>
+        <a href="#formacion">Formación</a>
+        <a href="#xp">Proyectos</a>
+        <a href="javascript:void(0);" class="icon" onclick="desplegar()">
+            <img src="./assets/img/vector.png" style="height: 46px;">
+        </a>
+      </div>
 
     <!-- Sección del Header/Title/Hero -->
     <section class="title">
@@ -200,128 +206,131 @@
     </section>
 
     <!-- Sección de Experiencia Profesional/Proyectos-->
+    <h2 class="experience__section__title" >Experiencia Profesional</h2>
     <section class="experience" id="xp">
-        <h2 class="experience__section__title" >Experiencia Profesional</h2>
+        
         <div class="experiencie__box">
             <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
+            
             <img class="experience__img" src="./assets/img/cover_reto_encriptador.png">
             <div class="experience__info">
-                <h2 class="experience__title">Encriptador de texto hecho con HTML, CSS y JavaScript</h2>
+                <h4 class="experience__title">Encriptador de texto <br> hecho con HTML, CSS y JavaScript</h4>
                 <h3 class="experience__text">Challenge Codificador Programa Oracle ONE-Alura</h3>
-                    <div class="experience__description">
-                        <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href="https://github.com/anperales/encriptador"><button class="experiencia__botao--repo">Repositorio</button></a></span>
-                            <span class="experience__demo"><a href="https://anperales.github.io/encriptador/"><button class="experience__botao--demo">Ver demo</button></a></span>
-                    </div>
+            </div>
+            <div class="experience__description">
+                <!-- Pon el enlace del proyecto en Github o GithubPages -->
+                    <span class="experience__repo"><a href="https://github.com/anperales/encriptador"><button class="experiencia__botao--repo">Repositorio</button></a></span>
+                    <span class="experience__demo"><a href="https://anperales.github.io/encriptador/"><button class="experience__botao--demo">Ver demo</button></a></span>
             </div>
         </div>  
 
         <div class="experiencie__box">
             <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
+            
             <img class="experience__img" src="./assets/img/cover_barberia.png">
             <div class="experience__info">
-                <h2 class="experience__title">Trabajo clase HTML5 y CSS3</h2>
+                <h4 class="experience__title">Trabajo clase HTML5 y CSS3</h4>
                 <h3 class="experience__text"></h3>Programa Oracle ONE-Alura</h3>
-                    <div class="experience__description">
-                        <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href="https://github.com/anperales/Barberia-Alura"><button class="experiencia__botao--repo">Repositorio</button></a></span>
-                            <span class="experience__demo"><a href="https://anperales.github.io/Barberia-Alura/"><button class="experience__botao--demo">Ver demo</button></a></span>
-                    </div>
+            </div>
+            <div class="experience__description">
+                <!-- Pon el enlace del proyecto en Github o GithubPages -->
+                    <span class="experience__repo"><a href="https://github.com/anperales/Barberia-Alura"><button class="experiencia__botao--repo">Repositorio</button></a></span>
+                    <span class="experience__demo"><a href="https://anperales.github.io/Barberia-Alura/"><button class="experience__botao--demo">Ver demo</button></a></span>
             </div>
         </div>  
 
         <div class="experiencie__box">
             <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
             <img class="experience__img" src="./assets/img/cover_apeperia.png">
-            <div class="experience__info-container">
+            <div class="experience__info">
                 <h2 class="experience__title">Trabajo clase Responsividad Web</h2>
                 <h3 class="experience__text">Programa Oracle ONE-Alura</h3>
-                    <div class="experience__description">
-                            <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href="https://github.com/anperales/apeperia"><button class="experiencia__botao--repo">Repositorio</button></a></span>
-                            <span class="experience__demo"><a href="https://anperales.github.io/apeperia/"><button class="experience__botao--demo">Ver demo</button></a></span>
-                    </div>
             </div>
+            <div class="experience__description">
+                <!-- Pon el enlace del proyecto en Github o GithubPages -->
+                <span class="experience__repo"><a href="https://github.com/anperales/apeperia"><button class="experiencia__botao--repo">Repositorio</button></a></span>
+                <span class="experience__demo"><a href="https://anperales.github.io/apeperia/"><button class="experience__botao--demo">Ver demo</button></a></span>
+        </div>
         </div>  
 
         <div class="experiencie__box">
             <img class="experience__img" src="./assets/img/cover_frutayfruto.png">
-            <div class="experience__info-container">
-            <h2 class="experience__title">Trabajo clase Arquitectura CSS</h2>
+            <div class="experience__info">
+                <h2 class="experience__title">Trabajo clase Arquitectura CSS</h2>
                 <h3 class="experience__text">Programa Oracle ONE-Alura</h3>
-                    <div class="experience__description">
-                            <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href="https://github.com/anperales/frutayfruto"><button class="experiencia__botao--repo">Repositorio</button></a></span>
-                            <span class="experience__demo"><a href="https://anperales.github.io/frutayfruto/"><button class="experience__botao--demo">Ver demo</button></a></span>
-                    </div>
             </div>
+            <div class="experience__description">
+                <!-- Pon el enlace del proyecto en Github o GithubPages -->
+                <span class="experience__repo"><a href="https://github.com/anperales/frutayfruto"><button class="experiencia__botao--repo">Repositorio</button></a></span>
+                <span class="experience__demo"><a href="https://anperales.github.io/frutayfruto/"><button class="experience__botao--demo">Ver demo</button></a></span>
+        </div>
         </div>  
 
         <div class="experiencie__box">
             <img class="experience__img" src="./assets/img/cover_mini_alura.png">
-            <div class="experience__info-container">
-            <h2 class="experience__title">Trabajo clase Flexbox</h2>
+            <div class="experience__info">
+                <h2 class="experience__title">Trabajo clase Flexbox</h2>
                 <h3 class="experience__text">Programa Oracle ONE-Alura</h3>
-                    <div class="experience__description">
-                            <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href="https://github.com/anperales/mini-alura"><button class="experiencia__botao--repo">Repositorio</button></a></span>
-                            <span class="experience__demo"><a href="https://anperales.github.io/mini-alura/"><button class="experience__botao--demo">Ver demo</button></a></span>
-                    </div>
+            </div>
+            <div class="experience__description">
+                <!-- Pon el enlace del proyecto en Github o GithubPages -->
+                <span class="experience__repo"><a href="https://github.com/anperales/mini-alura"><button class="experiencia__botao--repo">Repositorio</button></a></span>
+                <span class="experience__demo"><a href="https://anperales.github.io/mini-alura/"><button class="experience__botao--demo">Ver demo</button></a></span>
             </div>
         </div> 
 
         <div class="experiencie__box">
             <img class="experience__img" src="./assets/img/cover_petshop_val.png">
-            <div class="experience__info-container">
-            <h2 class="experience__title">Trabajo clase Validaciones con HTML y JavaScript</h2>
+            <div class="experience__info">
+                <h2 class="experience__title">Trabajo clase Validaciones con HTML y JavaScript</h2>
                 <h3 class="experience__text">Programa Oracle ONE-Alura</h3>
-                    <div class="experience__description">
-                            <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href="https://github.com/anperales/validaciones"><button class="experiencia__botao--repo">Repositorio</button></a></span>
-                            <span class="experience__demo"><a href="https://anperales.github.io/validaciones/"><button class="experience__botao--demo">Ver demo</button></a></span>
-                    </div>
             </div>
+            <div class="experience__description">
+                <!-- Pon el enlace del proyecto en Github o GithubPages -->
+                <span class="experience__repo"><a href="https://github.com/anperales/validaciones"><button class="experiencia__botao--repo">Repositorio</button></a></span>
+                <span class="experience__demo"><a href="https://anperales.github.io/validaciones/"><button class="experience__botao--demo">Ver demo</button></a></span>
+        </div>
         </div> 
 
         <div class="experiencie__box">
             <img class="experience__img" src="./assets/img/cover_petshop_crud.png">
-            <div class="experience__info-container">
-            <h2 class="experience__title">Trabajo clase CRUD JavaScript y Funciones Asíncronas</h2>
+            <div class="experience__info">
+                <h2 class="experience__title">Trabajo clase CRUD JavaScript y Funciones Asíncronas</h2>
                 <h3 class="experience__text">Programa Oracle ONE-Alura</h3>
-                    <div class="experience__description">
-                            <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href="https://github.com/anperales/crud_js_async"><button class="experiencia__botao--repo">Repositorio</button></a></span>
-                            <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
-                    </div>
             </div>
+            <div class="experience__description">
+                <!-- Pon el enlace del proyecto en Github o GithubPages -->
+                <span class="experience__repo"><a href="https://github.com/anperales/crud_js_async"><button class="experiencia__botao--repo">Repositorio</button></a></span>
+                <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
+        </div>
         </div> 
 
         <div class="experiencie__box">
             <img class="experience__img" src="./assets/img/cover_todoapp.png">
-            <div class="experience__info-container">
-            <h2 class="experience__title">Trabajo clase Manipulando DOM con JavaScript</h2>
+            <div class="experience__info">
+                <h2 class="experience__title">Trabajo clase Manipulando DOM con JavaScript</h2>
                 <h3 class="experience__text">Programa Oracle ONE-Alura</h3>
-                    <div class="experience__description">
-                            <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href="https://github.com/anperales/manipulando-dom-con-js"><button class="experiencia__botao--repo">Repositorio</button></a></span>
-                            <span class="experience__demo"><a href="https://anperales.github.io/manipulando-dom-con-js/"><button class="experience__botao--demo">Ver demo</button></a></span>
-                    </div>
+            </div>
+            <div class="experience__description">
+                <!-- Pon el enlace del proyecto en Github o GithubPages -->
+                <span class="experience__repo"><a href="https://github.com/anperales/manipulando-dom-con-js"><button class="experiencia__botao--repo">Repositorio</button></a></span>
+                <span class="experience__demo"><a href="https://anperales.github.io/manipulando-dom-con-js/"><button class="experience__botao--demo">Ver demo</button></a></span>
             </div>
         </div> 
 
         <div class="experiencie__box">
             <img class="experience__img" src="./assets/img/cover_org.png">
-            <div class="experience__info-container">
-            <h2 class="experience__title">Trabajo clases React</h2>
+            <div class="experience__info">
+                <h2 class="experience__title">Trabajo clases React</h2>
                 <h3 class="experience__text">Programa Oracle ONE-Alura</h3>
-                    <div class="experience__description">
-                            <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href="https://github.com/anperales/org"><button class="experiencia__botao--repo">Repositorio</button></a></span>
-                            <span class="experience__demo"><a href="https://org-five-omega.vercel.app/"><button class="experience__botao--demo">Ver demo</button></a></span>
-                    </div>
+            </div>
+            <div class="experience__description">
+                <!-- Pon el enlace del proyecto en Github o GithubPages -->
+                <span class="experience__repo"><a href="https://github.com/anperales/org"><button class="experiencia__botao--repo">Repositorio</button></a></span>
+                <span class="experience__demo"><a href="https://org-five-omega.vercel.app/"><button class="experience__botao--demo">Ver demo</button></a></span>
             </div>
         </div> 
-
+    </section>
         <!-- Sección de Contacto -->
         <section class="formcontato" id="contacto">
             <div  class="formcontato__contacto">

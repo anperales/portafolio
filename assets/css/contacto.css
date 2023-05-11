@@ -21,6 +21,7 @@
     justify-content: center;
     padding-top: 1.5rem;
     gap:1.5rem;
+    box-sizing: border-box;
 }
 
 .formcontato__text{
@@ -48,6 +49,7 @@
 .formcontato__form{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .formcontato__input{
@@ -59,7 +61,7 @@
     border-radius: 4px;
     border: none;
     border-bottom: solid 4px var(--color-contraste);
-    width: 656px;
+    width: 95%;
     height: 58px;
     position: relative;
     padding-top: 20px;
@@ -98,8 +100,8 @@
     border-bottom: solid 4px var(--color-contraste);
     position: relative;
     padding-top: 20px;
-    padding-left: 20px;
-    box-sizing: border-box;
+    /* padding-left: 20px; */
+    width: 95%;
     font-family: 'Raleway';
     font-size: 1rem;
 }
@@ -112,7 +114,14 @@
     background-color: var(--color-acento);
     border-color: var(--color-acento);
     color: var(--color-cajas);
+    border-radius: 10px;
 
+}
+.formcontato__botao:hover{
+  transition: 0.5s;
+    -webkit-box-shadow: 11px 11px 19px -12px rgba(0,0,0,0.82);
+    -moz-box-shadow: 11px 11px 19px -12px rgba(0,0,0,0.82);
+    box-shadow: 11px 11px 19px -12px rgba(0,0,0,0.82);
 }
 
 .formcontato__input:not(:placeholder-shown) + .input-label,
@@ -153,7 +162,7 @@
 
 @media screen and (max-width:768px) {
     .formcontato__img{
-       display: none;
+      display: none;
     }
 
     .formcontato__input{

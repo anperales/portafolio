@@ -1,5 +1,4 @@
-.about__container{
-    
+.about__container{    
     background-color: var(--color-seccion);
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -17,7 +16,8 @@
 .about__paragraph{
     line-height: 1.3rem;
     padding-left: 3rem;
-    width:70%;
+    box-sizing: border-box;
+
 }
 
 .firma{
@@ -25,13 +25,13 @@
 }
 @media screen and (max-width: 768px) {
     .about__paragraph{
-        width:90vw;
+        width:100%;
     }
 }
 
 @media screen and (max-width: 380px){
     .about__paragraph{
-        width: 350px;
+        width: 100%;
         padding-left: 1rem;
     }
 
@@ -39,6 +39,6 @@
         padding-left: 0.5rem;
     }
     .about__title{
-        padding-left: 1rem;
+        box-sizing: border-box;
     }
 }

@@ -27,3 +27,6 @@ a{
     text-decoration: none;
     color: var(--color-link);
 }
+.tudo{
+    width: 100%;
+}
